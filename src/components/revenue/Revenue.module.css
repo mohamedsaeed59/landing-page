@@ -1,0 +1,138 @@
+.revenue {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+}
+.revenueCards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  flex: 2;
+}
+.revenueCard {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 20px;
+}
+.circleBackground1 {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  position: absolute;
+  top: -20px;
+  left: -50px;
+  z-index: 1;
+  overflow: hidden;
+}
+.circleBackground2 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  left: 230px;
+  z-index: 1;
+  overflow: hidden;
+}
+.cardContent {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  background: white;
+  padding: 16px;
+  width: 300px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 2; 
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+.cardContent:hover {
+  transform: translateY(-10px);
+}
+.avatar {
+  border-radius: 50%;
+}
+.revenueText {
+  font-size: 0.8rem;
+  color: #57585a;
+}
+
+.positive {
+  color: #2fc274;
+}
+.revenueCardTitle{
+  display: flex;
+  gap: 10px;
+}
+.revenueTitle{
+  color: #5e35b1;
+}
+.content {
+  flex: 2;
+  text-align: left;
+  padding-left: 2rem;
+}
+.subtitle {
+  color: #f0b429;
+  font-size: 18px;
+  margin: 0 0 1rem;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  max-width: 320px;
+}
+.paragraph {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 30px;
+}
+.detailsBtn {
+  background: linear-gradient(to right, #7e57c2, #9a6cf5);
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.detailsBtn:hover {
+  background: linear-gradient(to right, #5e35b1, #7b5cd7);
+}
+.iconWrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  color: #7e57c2;
+  border-radius: 50%;
+  padding: 5px;
+  width: 24px;
+  height: 24px;
+  margin-left: 8px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+.detailsBtn:hover .iconWrapper {
+  background: #eee;
+  color: #5e35b1;
+}
+@media(max-width: 992px) {
+  .revenue {
+      flex-direction: column;
+  }
+  .title {
+      font-size: 30px;
+  }
+}

@@ -1,0 +1,64 @@
+.writeUs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+.formContainer {
+    background: white;
+    padding: 30px 100px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+.title {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+.inputField {
+    margin-bottom: 15px;
+}
+.email, .message {
+    /* width: 100%; */
+    padding: 10px 25px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    background: #f5f7fa;
+    font-size: 14px;
+    color: #555;
+    outline: none;
+}
+.message {
+    resize: none;
+    height: 100px;
+}
+.sendButton {
+    background: linear-gradient(to right, #7e57c2, #9a6cf5);
+    color: white;
+    padding: 15px 25px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+.sendButton:hover {
+    background: linear-gradient(to right, #5e35b1, #7b5cd7);
+}
+.imageContainer {
+    max-width: 600px;
+}
+.person {
+    object-fit: contain;
+}
+@media (max-width: 1200px) {
+    .writeUs {
+      flex-direction: column;
+      padding: 1rem;
+      margin-top: 50px;
+    }
+    .formContainer {
+        padding: 30px 80px;
+    }
+}

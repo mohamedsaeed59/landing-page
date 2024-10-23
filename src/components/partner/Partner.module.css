@@ -1,0 +1,21 @@
+.partner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title{
+    color: #6a768d;
+    font-size: 20px;
+    font-weight: 700;
+}
+.partnerImage{
+    margin: 0 30px;
+    opacity: 80%;
+    object-fit: contain;
+}
+@media(max-width: 992px){
+    .partner {
+      flex-direction: column;
+      text-align: center;
+  }
+}
